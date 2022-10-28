@@ -8,6 +8,7 @@ RUN tdnf update -y && \
     tdnf install -y docker && \
     tdnf clean all
 
+ADD docker /etc/default/
 ADD VERSION .
 
 # Final tidying
